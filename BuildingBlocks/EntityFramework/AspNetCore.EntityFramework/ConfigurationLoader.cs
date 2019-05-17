@@ -8,24 +8,22 @@ namespace AspNetCore.EntityFramework
 {
     public class ConfigurationLoader<TContext> where TContext:DbContext
     {
-        private ModelBuilder _modelBuilder;
-        public ConfigurationLoader(ModelBuilder modelBuilder)
+        private ModelBuilder _modelBuider;
+        public ConfigurationLoader(ModelBuilder builder)
         {
-            _modelBuilder = modelBuilder;
+            _modelBuider = builder;
         }
         public void Load()
         {
             var types = typeof(TContext).GetTypeInfo().Assembly.GetTypes();
-
-            foreach (var t in types)
+            foreach(var t in types)
             {
                 if(typeof(IEntityConfiguration).IsAssignableFrom(t)
-                    && !t.GetTypeInfo().IsAbstract
-                    && !t.GetTypeInfo().IsInterface)
+                    && !t.GetTypeInfo().IsInterface
+                    && !t.GetTypeInfo().IsAbstract)
                 {
                     var configurationInstance = Activator.CreateInstance(t) as IEntityConfiguration;
-
-                    configurationInstance.Configure(_modelBuilder);
+                    configurationInstance.Configure(_modelBuider);
                 }
             }
         }
