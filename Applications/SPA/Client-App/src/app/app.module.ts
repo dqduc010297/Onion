@@ -9,12 +9,20 @@ import { LoginComponent } from './feature/login/login.component';
 
 // Service
 import { AuthHttpService } from './share/services/auth-http.service';
+import { LayoutComponent } from './layout/layout.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { NavigationComponent } from './layout/navigation/navigation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    LayoutComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
