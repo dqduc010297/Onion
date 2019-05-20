@@ -1,11 +1,13 @@
 <div class="container-fluid clearfix">
+  <app-header></app-header>
   <div class="row" id="body-row">
     <app-navigation></app-navigation>
-    <app-header></app-header>
     <main class="main-section col">
       <!--BODY BEGIN-->
-      <router-outlet></router-outlet>
-
+      <div style="background-color: black">
+        <p>123</p>
+        <router-outlet></router-outlet>
+      </div>
       <!--BODY END-->
 
     </main>
