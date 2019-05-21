@@ -10,9 +10,9 @@ export class LoginComponent implements OnInit {
   constructor(
     private _apiHttp: AuthHttpService
   ) { }
-  model = {
-    username: '',
-    password: ''
+  user = {
+    userName: '',
+    passWord: ''
   };
 
   ngOnInit() {
