@@ -1,51 +1,21 @@
 <div class="centered-form">
   <div class="centered-form__form">
-      <form #myForm="ngForm" (ngSubmit)="login()" name="myForm">
-          <div class="form-field">
-              <h1>GoGo</h1>
-          </div>
-          <hr />
-          <div class="form-field">
-              <h3>Login</h3>
-          </div>
-          <div class="form-field">
-              <label for="username">User Name</label>
-              <input type="text" class="form-control" id="username" [(ngModel)]="model.username" name="username" #username="ngModel" required autofocus>
-              
 
-             <div [ngClass]="{'hidden': username.valid || username.pristine}" class="validation-message">
-                  <p style="color:red">
-                      Username is required.
-                  </p>
-              </div>
-          </div>
-          <div class="form-field">
-            <label for="pwd">Password</label>
-              <input type="password" class="form-control" id="pwd" [(ngModel)]="model.password" name="password" #password="ngModel" required>
-              <div [ngClass]="{'hidden': password.valid || password.pristine}" class="validation-message">
-                <p style="color:red">
-                  Password is required.
-                </p>
-              </div>
-          </div>
-          <div class="form-field">
-              <ul class="pagination">
-                  <li>
-                      <label><input type="checkbox"> Remember me</label>
-                  </li>
-                  <li>
-                      <a id="forgot" (click)="displayToastr()" style="color:#0066ff">Forgot password?</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="form-field">
-              <button type="submit" class="btn btn-primary active">Sign In</button>
-              <div [hidden]="!isError" class="validation-message">
-                <p style="color:red">
-                  {{message}}
-                </p>
-              </div>
-          </div>
-      </form>
+    <form #myForm="ngForm" (ngSubmit)="login()" name="myForm" class="custom-form">
+      <img src="../../../assets/blue.png" />
+      <h3>SIGN IN</h3>
+      <div class="form-group" [ngClass]="{'not-empty': user.userName.length}">
+        <input type="text" class="form-control" name="user" id="user" [(ngModel)]="user.userName" />
+        <label for="user" class="animated-label">Username</label>
+      </div>
+      <div class="form-group" [ngClass]="{'not-empty': user.passWord.length}">
+        <input type="password" class="form-control" name="pass" id="pass" [(ngModel)]="user.passWord" />
+        <label for="pass" class="animated-label">Password</label>
+      </div>
+      <div class="submit">
+        <button class="btn btn-basic btn-block">SIGN IN NOW</button>
+      </div>
+      <p>Forget Password? <a href="">Reset</a></p>
+    </form>
   </div>
 </div>
