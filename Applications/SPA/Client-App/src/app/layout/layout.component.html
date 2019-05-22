@@ -1,15 +1,11 @@
-<div class="container-fluid clearfix">
+<div class="clearfix">
   <app-header></app-header>
-  <div class="row" id="body-row">
+  <div id="body-row">
     <app-navigation></app-navigation>
-    <main class="main-section col">
+    <div class="main-section">
       <!--BODY BEGIN-->
-      <div style="background-color: black">
-        <p>123</p>
-        <router-outlet></router-outlet>
-      </div>
+      <router-outlet></router-outlet>
       <!--BODY END-->
-
-    </main>
+    </div>
   </div>
 </div>

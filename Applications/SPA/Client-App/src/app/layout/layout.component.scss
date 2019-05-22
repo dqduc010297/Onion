@@ -1,0 +1,14 @@
+.main-section {
+  margin-left: 232px;
+}
+
+.row {
+  margin: 0px;
+}
+
+@media screen and (max-width: 991px) {
+  .main-section {
+    background-color: #fff;
+    margin-left: 0px;
+  }
+}

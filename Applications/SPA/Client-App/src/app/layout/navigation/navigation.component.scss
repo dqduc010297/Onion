@@ -1,49 +1,45 @@
+$sidebarBackgroundColor: #ffffff;
+$sidebarColor: #8f8c8a;
+$sidebarBackgroundColorHoverOrHold: #e6e6e5;
+$sidebarColorHoverOrHold: #000000;
+
 .wrapper {
-  display: flex;
+  // display: flex;
+  position: relative;
   width: 100%;
+  position: relative;
 }
 
 .sidebar {
-  width: 220px;
+  width: 225px;
   position: fixed;
-  top: 0;
   left: 0;
-  height: 100vh;
-  z-index: 999;
-  background: #ffffff;
-  color: #42526E;
+  min-height: 100vh;
+  background: $sidebarBackgroundColor;
+  color: $sidebarColor;
   transition: all 0.3s;
   border-right: 0.5px solid #e6e6e6;
-  padding: 16px 8px 0px 8px;
-}
-
-.sidebar-header {
-  padding-bottom: 12px;
-  margin-bottom: 18px;
-  border-bottom: 2px solid #e6e6e6;
-}
-
-.sidebar-list {
-  margin-top: 12px;
+  padding: 4px 0px 0px 0px;
 }
 
 .sidebar-icon {
-  width: 26px;
+  width: 18px;
+  height: 18px;
 }
 
 .sidebar-item {
-  margin: 8px 0px 8px 0px;
+  margin: 0px 1px 0px 0px;
 }
 
 .sidebar-item a {
   padding-left: 16px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .sidebar-item:hover {
-  font-weight: 500;
-  background-color: #ebecf0
+  background-color: $sidebarBackgroundColorHoverOrHold;
+  color: $sidebarColorHoverOrHold;
 }
 
 .sidebar-item-content {
@@ -51,7 +47,6 @@
 }
 
 .sidebar-item.hold {
-  color: #0052cc;
-  font-weight: 500;
-  background-color: #ebecf0
+  background-color: $sidebarBackgroundColorHoverOrHold;
+  color: $sidebarColorHoverOrHold;
 }
