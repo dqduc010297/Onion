@@ -14,6 +14,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { TestcomponentComponent } from './feature/testcomponent/testcomponent.component';
+import { PriceQuoteComponent } from './feature/price-quote/price-quote.component';
+import { SelectComponent } from './share/component/select/select.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { TestcomponentComponent } from './feature/testcomponent/testcomponent.co
     HeaderComponent,
     FooterComponent,
     NavigationComponent,
-    TestcomponentComponent
+    TestcomponentComponent,
+    PriceQuoteComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
