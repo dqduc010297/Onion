@@ -1,45 +1,55 @@
-<!-- <div class="priceQuote">
+<div class="priceQuote">
   <div class="priceQuoteHeader">
     <p>PHIẾU YÊU CẦU BÁO CÁO</p>
-   <div class="row">
-     <div class="col-8">
-      <div class="row">
-        <div class="col-2">
-        
-          <input type="text" />  <span>Bộ phận</span>
+    <div class="row">
+      <div class="col-6">
+        <div class="d-inline-flex p-3">
+          <div class="p-3">
+            <label for="department">Bộ phận:</label>
+            <input type="text" class="custom-input" id="department" />
+          </div>
+          <div class="p-3">
+            <label for="grant">Ngày ban hành:</label>
+            <input type="date" class="custom-input" id="grant" />
+          </div>
+          <div class="p-3">
+            <label for="userCreated">Người ban hành:</label>
+            <input type="text" class="custom-input" id="userCreated" />
+          </div>
+        </div>
+        <div class="d-inline-flex p-3">
+          <div class="p-3">
+            <label for="department">Bộ phận:</label>
+            <input type="text" class="custom-input" id="department" />
+          </div>
+          <div class="p-3">
+            <label for="grant">Ngày ban hành:</label>
+            <input type="date" class="custom-input" id="grant" />
+          </div>
+          <div class="p-3">
+            <label for="userCreated">Người ban hành:</label>
+            <input type="text" class="custom-input" id="userCreated" />
+          </div>
         </div>
       </div>
-     </div>
-     <div class="col-4"> -->
-<!-- Show barcode -->
-<!-- </div>
-   </div>
+      <div class="col-2">
+        <!-- Show barcode -->
+      </div>
+      <div class="col-2 control">
+        <!-- <p>Control</p>
+          <button type="button" class="btn btn-primary">Reload</button>
+          <button type="button" class="btn btn-success">Add</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-info">Update</button>
+          <button type="button" class="btn btn-secondary">Review</button> -->
+      </div>
+    </div>
   </div>
   <div class="priceQuoteControl">
   </div>
   <div class="priceQuoteGrid">
-  </div>
-</div> -->
-<!-- <div class="row">
-  <div class="col-md-6" style="background-color: red">
-      <div class="select-box">
-          <div class="select-box__current" tabindex="1">
-            <div class="select-box__value" *ngFor = "let item of data">
-              <input class="select-box__input" type="radio" id={{item.value}} value={{item.value}} name="Ben" checked="checked" />
-              <p class="select-box__input-text">{{item.textDisplay}}</p>
-            </div>
-            <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon"
-              aria-hidden="true" />
-          </div>
-          <ul class="select-box__list">
-            <li *ngFor = "let item of data">
-                <label class="select-box__option" for={{item.value}} aria-hidden="aria-hidden">{{item.textDisplay}}</label>
-            </li>
-          </ul>
-        </div>
-        
-  </div>
-</div> -->
+    <table>
 
-<app-select [data]="selectedData"></app-select>
-
+    </table>
+  </div>
+</div>

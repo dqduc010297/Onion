@@ -9,10 +9,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
     path: '', component: LayoutComponent, children: [
-      { path: 'dashboard', component: TestcomponentComponent },
-      { path: 'supplier', component: TestcomponentComponent },
-      { path: 'product', component: TestcomponentComponent },
-      { path: 'order', component: TestcomponentComponent },
+      { path: 'test', component: TestcomponentComponent },
       { path: 'pricequote', component: PriceQuoteComponent }
     ]
   }

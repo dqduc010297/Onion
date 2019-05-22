@@ -15,7 +15,6 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { TestcomponentComponent } from './feature/testcomponent/testcomponent.component';
 import { PriceQuoteComponent } from './feature/price-quote/price-quote.component';
-import { SelectComponent } from './share/component/select/select.component';
 
 
 @NgModule({
@@ -28,7 +27,6 @@ import { SelectComponent } from './share/component/select/select.component';
     NavigationComponent,
     TestcomponentComponent,
     PriceQuoteComponent,
-    SelectComponent
   ],
   imports: [
     BrowserModule,
