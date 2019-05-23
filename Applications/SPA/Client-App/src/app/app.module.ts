@@ -15,6 +15,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
 import { TestcomponentComponent } from './feature/testcomponent/testcomponent.component';
 import { PriceQuoteComponent } from './feature/price-quote/price-quote.component';
+import { GridItemComponent } from './feature/price-quote/grid-item/grid-item.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { PriceQuoteComponent } from './feature/price-quote/price-quote.component
     NavigationComponent,
     TestcomponentComponent,
     PriceQuoteComponent,
+    GridItemComponent,
   ],
   imports: [
     BrowserModule,
