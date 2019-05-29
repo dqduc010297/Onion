@@ -33,6 +33,7 @@ export class PriceQuoteComponent implements OnInit {
       cost: 662
     }
   ];
+  isShowDetail = 0;
 
   constructor(
     private _priceQuoteService: PriceQuoteService
@@ -43,6 +44,6 @@ export class PriceQuoteComponent implements OnInit {
   }
 
   selectedItem(item) {
-    console.log(item);
+    this.isShowDetail = 1;
   }
 }

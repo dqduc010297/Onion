@@ -10,7 +10,7 @@ export class GridItemComponent implements OnInit {
 
 // tslint:disable-next-line: no-input-rename
   @Input('item') item: Drawing;
-  
+
   constructor() { }
 
   ngOnInit() {

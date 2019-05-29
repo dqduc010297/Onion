@@ -2,7 +2,7 @@
   <div class="centered-form__form">
 
     <form #myForm="ngForm" (ngSubmit)="login()" name="myForm" class="custom-form">
-      <img src="../../../assets/blue.png" />
+      <!-- <img src="../../../assets/blue.png" /> -->
       <h3>SIGN IN</h3>
       <div class="form-group" [ngClass]="{'not-empty': user.userName.length}">
         <input type="text" class="form-control" name="user" id="user" [(ngModel)]="user.userName" />
